@@ -4,13 +4,15 @@
            
             value="DocumentEntry.typeCode"/>
    <meta>
-      <source value="https://art-decor.org/fhir/ValueSet/2.16.756.5.30.1.127.3.10.1.27--20230608144510"/>
+      <source value="https://art-decor.org/fhir/ValueSet/2.16.756.5.30.1.127.3.10.1.27--20230501143556"/>
+      <lastUpdated value="2024-06-07T11:16:43Z"/>
+      <source value="https://art-decor.org/fhir/4.0/ch-epr-"/>
       <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
       <!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
    </meta>
    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
       <valuePeriod>
-         <start value="2023-06-08T14:45:10+02:00"/>
+         <start value="2023-05-01T14:35:56+01:00"/>
       </valuePeriod>
    </extension>
    <url
@@ -21,7 +23,7 @@
       <system value="urn:ietf:rfc:3986"/>
       <value value="urn:oid:2.16.756.5.30.1.127.3.10.1.27"/>
    </identifier>
-   <version value="2023-06-08T14:45:10"/>
+   <version value="2023-05-01T14:35:56"/>
    <name
              
               value="DocumentEntryTypeCode"/>
@@ -70,47 +72,41 @@
             </designation>
             <designation>
                <language value="en-US"/>
-               <value value="Imaging order"/>
+               <value value="Imaging Order"/>
             </designation>
          </concept>
-         <!-- manually added -->
          <concept>
             <code value="82291000195104"/>
             <display value="Medication dispense document (record artifact)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Medikamentenabgabe"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="dispense de médicaments"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="dispensazione di medicamenti"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="dispensaziun da medicaments"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Medication dispense"/>
+            </designation>
          </concept>
       </include>
       <include>
          <system
                      
                       value="http://snomed.info/sct"/>
-<!-- need to manually remove         <version
          <version
                       
-                       value="http://snomed.info/sct/2011000195101"/> -->
-         <concept>
-            <code value="787148009"/>
-            <display value="Digital representation of specimen (record artifact)"/>
-            <designation>
-               <language value="de-CH"/>
-               <value value="Bild/Video/Audio"/>
-            </designation>
-            <designation>
-               <language value="fr-CH"/>
-               <value value="image/vidéo/audio"/>
-            </designation>
-            <designation>
-               <language value="it-CH"/>
-               <value value="immagine/video/audio"/>
-            </designation>
-            <designation>
-               <language value="en-US"/>
-               <value value="Picture/Video/Audio"/>
-            </designation>
-            <designation>
-               <language value="rm-CH"/>
-               <value value="maletg/video/audio"/>
-            </designation>
-         </concept>
+                       value="http://snomed.info/sct/2011000195101"/>
          <concept>
             <code value="371529009"/>
             <display value="History and physical report (record artifact)"/>
@@ -180,7 +176,7 @@
             </designation>
             <designation>
                <language value="en-US"/>
-               <value value="Laboratory order"/>
+               <value value="Laboratory Order"/>
             </designation>
          </concept>
          <concept>
@@ -348,7 +344,7 @@
             </designation>
             <designation>
                <language value="en-US"/>
-               <value value="Drug prescription"/>
+               <value value="Medical Prescription record"/>
             </designation>
          </concept>
          <concept>
@@ -444,7 +440,7 @@
             </designation>
             <designation>
                <language value="en-US"/>
-               <value value="Transfer summary"/>
+               <value value="Transfer summary report"/>
             </designation>
          </concept>
          <concept>
@@ -687,14 +683,77 @@
                <value value="Medication list"/>
             </designation>
          </concept>
-         <!-- manually added because not in art-decor -->
          <concept>
             <code value="736378000"/>
             <display value="Medication management plan (record artifact)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Medikationsplan"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="plan de médication"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="piano dei medicamenti"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="plan da mediaziun"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Medication Card document"/>
+            </designation>
          </concept>
          <concept>
             <code value="761931002"/>
             <display value="Medication treatment plan report (record artifact)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Therapieentscheid Medikation"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="plan de traitement medicament"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="decisione di terapia medicament"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="plan da tractament da medicaments"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Medication treatment plan"/>
+            </designation>
+         </concept>
+         <concept>
+            <code value="787148009"/>
+            <display value="Digital representation of specimen (record artifact)"/>
+            <designation>
+               <language value="de-CH"/>
+               <value value="Bild/Video/Audio"/>
+            </designation>
+            <designation>
+               <language value="fr-CH"/>
+               <value value="image/vidéo/audio"/>
+            </designation>
+            <designation>
+               <language value="it-CH"/>
+               <value value="immagine/video/audio"/>
+            </designation>
+            <designation>
+               <language value="rm-CH"/>
+               <value value="maletg/video/audio"/>
+            </designation>
+            <designation>
+               <language value="en-US"/>
+               <value value="Picture/Video/Audio"/>
+            </designation>
          </concept>
       </include>
    </compose>

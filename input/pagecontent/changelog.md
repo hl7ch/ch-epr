@@ -3,6 +3,7 @@ All significant changes to this FHIR implementation guide will be documented on 
 
 ### Next version 
 * [#49](https://github.com/hl7ch/ch-term/issues/49): Include VS Treatment Reason
+* [#78](https://github.com/hl7ch/ch-term/issues/78): updates for typeCode
 
 
 ### v3.1.0 (2024-12-17) 
